@@ -31,3 +31,10 @@ describe('defaults', function(){
     expect(frame({name: 'dave', city: 'Dublin'})).toEqual('Hello, dave from Dublin');
   });
 });
+
+describe('numbers', function(){
+  it('should have sensible defaults for number printing', function(){
+    var frame = ladybird('printing a decimal %(dec) and float %(float)');
+    expect(frame({dec: 21, float: 1.20})).toEqual('printing a decimal 21 and float 1.2');
+  });
+});
