@@ -1,0 +1,19 @@
+{
+  "name": "ladybird",
+  "version": "0.0.0",
+  "authors": [
+    "Peter Saxton <peterhsaxton@gmail.com>"
+  ],
+  "description": "String interpolation]",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
