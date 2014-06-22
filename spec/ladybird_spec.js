@@ -19,3 +19,15 @@ describe('object interpolation', function(){
     expect(frame({food: 'aphids'})).toEqual('eats aphids');
   });
 });
+
+describe('defaults', function(){
+  it('should accept a defaults object when created', function(){
+    var frame = ladybird('Hello, %(name) from %(city)', {city: 'London'});
+    expect(frame({name: 'dave'})).toEqual('Hello, dave from London');
+  });
+
+  it('should override defaults', function(){
+    var frame = ladybird('Hello, %(name) from %(city)', {city: 'London'});
+    expect(frame({name: 'dave', city: 'Dublin'})).toEqual('Hello, dave from Dublin');
+  });
+});
