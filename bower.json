@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    "cumin": "~0.7.0"
+    "cumin": "~0.8.1"
   }
 }
